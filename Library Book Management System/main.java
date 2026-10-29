@@ -11,7 +11,7 @@ class Book{
         totalbooks ++;
     }
 
-    void Bookdetails(){
+    void displayBookDetails(){
         System.out.println("Title: "+ this.title);
         System.out.println("Author: "+ this.author);
         System.out.println("Price: "+ this.price);
@@ -30,11 +30,11 @@ class main{
 
 
         System.out.println("------------------------------");
-        b1.Bookdetails();
+        b1.displayBookDetails();
         System.out.println("------------------------------");
-        b2.Bookdetails();
+        b2.displayBookDetails();
         System.out.println("------------------------------");
-        b3.Bookdetails();
+        b3.displayBookDetails();
         System.out.println("------------------------------");
         
         Book.bookcount();
