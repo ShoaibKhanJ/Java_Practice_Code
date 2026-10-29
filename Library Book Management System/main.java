@@ -4,7 +4,7 @@ class Book{
     int price;
     static int totalbooks;
 
-    book(String title, String author, int price){
+    Book(String title, String author, int price){
         this.title = title;
         this.author = author;
         this.price = price;
@@ -12,13 +12,13 @@ class Book{
     }
 
     void Bookdetails(){
-        Sytsem.out.println("Title: "+ this.title);
-        Sytsem.out.println("Author: "+ this.author);
-        Sytsem.out.println("Price: "+ this.price);
+        System.out.println("Title: "+ this.title);
+        System.out.println("Author: "+ this.author);
+        System.out.println("Price: "+ this.price);
     }
 
     static void bookcount(){
-        Sytsem.out.println("Total Books Count: "+ totalbooks);
+        System.out.println("Total Books Count: "+ totalbooks);
     }
 }
 
@@ -29,13 +29,13 @@ class main{
         Book b3 = new Book("Attitude is Everything", "Jeff Keller", 550 );
 
 
-        Sytsem.out.println("------------------------------");
+        System.out.println("------------------------------");
         b1.Bookdetails();
-        Sytsem.out.println("------------------------------");
+        System.out.println("------------------------------");
         b2.Bookdetails();
-        Sytsem.out.println("------------------------------");
+        System.out.println("------------------------------");
         b3.Bookdetails();
-        Sytsem.out.println("------------------------------");
+        System.out.println("------------------------------");
         
         Book.bookcount();
 
