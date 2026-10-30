@@ -38,6 +38,5 @@ class main{
         System.out.println("------------------------------");
         
         Book.bookcount();
-
     }
 }
