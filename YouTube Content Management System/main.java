@@ -23,7 +23,7 @@
         String channelname;
 
     public YouTubeVideo(String title, int views, String channelname) {
-        super(title, views);
+        super(title, views); 
         this.channelname = channelname;
     }
     void displayDetails() {
