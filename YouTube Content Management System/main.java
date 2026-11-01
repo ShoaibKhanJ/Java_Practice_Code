@@ -28,7 +28,7 @@
     }
     void displayDetails() {
     video_details(); // Calls inherited method
-    System.out.println("Channel: " + this.channelname);
+    System.out.println("Chnnel: " + this.channelname);
 }
 
         
