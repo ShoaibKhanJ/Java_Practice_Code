@@ -1,6 +1,6 @@
     class Video{
     private String title;
-    private int views;
+    private int views;   
     static int total_videos = 0;
 
     Video(String title, int views){
@@ -20,15 +20,18 @@
 }
 
     class YouTubeVideo extends Video{
-        String channelname;
+        int video_likes;
+        int video_comments;        
 
-    public YouTubeVideo(String title, int views, String channelname) {
-        super(title, views); 
-        this.channelname = channelname;
+    public YouTubeVideo(String title, int views, int video_likes, int video_comments) {
+        super(title, views);
+        this.video_comments = video_comments;
+        this.video_likes = video_likes; 
     }
     void displayDetails() {
     video_details(); // Calls inherited method
-    System.out.println("Chnnel: " + this.channelname);
+    System.out.println("Likes: "+ video_likes);
+    System.out.println("Comments: "+ video_comments);
 }
 
         
@@ -36,9 +39,9 @@
 
 class main{
     public static void main(String[] args) {
-        YouTubeVideo v1 = new YouTubeVideo("How to eat BreakFast?", 150824, "Ducky Bhai");
-        YouTubeVideo v2 = new YouTubeVideo("How to eat Lunch?", 50824, "Ducky Bhai");
-        YouTubeVideo v3 = new YouTubeVideo("How to eat DINNER?", 550824, "Ducky Bhai");
+        YouTubeVideo v1 = new YouTubeVideo("How to eat BreakFast?", 150824, 708, 10);
+        YouTubeVideo v2 = new YouTubeVideo("How to eat Lunch?", 50824, 7489, 508);
+        YouTubeVideo v3 = new YouTubeVideo("How to eat DINNER?", 550824, 7515, 814);
 
    
     System.out.println("_______________________________________________");
