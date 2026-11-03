@@ -1,55 +1,81 @@
 # ☕ Java Practice Code
 
-A collection of my Java programming practice, exercises, and mini-projects as I build a strong foundation in programming and Object-Oriented Programming (OOP).
+A collection of Java programming exercises, practical implementations, and mini-projects documenting my journey of learning Java and Object-Oriented Programming (OOP).
 
 ## 🎯 About This Repository
 
-This repository documents my journey of learning Java through hands-on coding, problem-solving, and practical projects. My focus is on understanding programming concepts by implementing them in real-world scenarios.
+This repository serves as a practical record of my Java learning journey. I focus on understanding programming concepts through hands-on implementation, logical problem-solving, and small real-world projects rather than simply memorizing syntax.
+
+My goal is to build strong programming fundamentals and develop a solid understanding of Object-Oriented Programming.
 
 ## 📚 Topics Covered
 
 - Java Fundamentals
 - Classes and Objects
-- Constructors and the `this` Keyword
+- Constructors
+- The `this` Keyword
 - Instance and Static Variables
 - Instance and Static Methods
 - Access Modifiers
 - Encapsulation
-- Problem-Solving and Algorithm Design
+- Inheritance
+- The `extends` Keyword
+- The `super` Keyword
+- Constructor Chaining
+- Basic Problem-Solving and Algorithmic Thinking
+
+*This list will expand as I progress through Java.*
 
 ## 🚀 Practice Projects
 
 ### 1. Bank Account Management System
-Practicing classes, objects, constructors, methods, and basic account operations.
+Practising classes, objects, constructors, methods, and basic bank account operations.
 
-### 2. Video Management System
-Exploring instance variables, static counters, constructors, and methods through video records.
+### 2. YouTube Video Management System
+Practising inheritance, constructors, instance variables, static counters, and method reuse through a simple video management application.
 
 ### 3. Library Book Management System
-Practicing object creation, book details, constructors, and static variables to count books.
+Practising object creation, constructors, book details, and static variables for tracking the total number of books.
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies & Tools
 
-- **Language:** Java
-- **IDE:** Visual Studio Code / Android Studio
+- **Programming Language:** Java
+- **Development Environments:** Visual Studio Code and Android Studio
 - **Version Control:** Git and GitHub
+- **JDK:** Java Development Kit
 
-## 📈 Learning Goals
+## 📈 Learning Objectives
 
-- Strengthen my Java programming fundamentals.
-- Develop a deeper understanding of OOP principles.
-- Improve algorithmic thinking and problem-solving skills.
-- Build practical projects with clean, readable code.
-- Progress toward more advanced Java and software development projects.
+- Build strong foundations in Java programming.
+- Understand OOP concepts through practical implementation.
+- Develop logical thinking and problem-solving abilities.
+- Write clean, readable, and maintainable code.
+- Build increasingly complex Java applications.
+- Prepare for advanced topics in software development.
 
-## ▶️ Running the Code
+## ▶️ Getting Started
 
-1. Install the [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/downloads/).
-2. Clone this repository:
+### Prerequisites
 
-   ```bash
-   git clone https://github.com/ShoaibKhanJ/Java_Practice_Code.git
-   ```
+- Install the [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/downloads/).
+- Install an IDE such as [Visual Studio Code](https://code.visualstudio.com/) or [Android Studio](https://developer.android.com/studio).
 
-3. Open the project in your preferred Java IDE.
-4. Compile and run the
+### Clone the Repository
+
+```bash
+git clone https://github.com/ShoaibKhanJ/Java_Practice_Code.git
+```
+
+### Run the Programs
+
+1. Open the cloned repository in your preferred IDE.
+2. Navigate to the project or Java source file you want to explore.
+3. Compile and run the Java program using your IDE or terminal.
+
+## 📌 Repository Status
+
+<text>Actively maintained and updated as I learn new Java concepts, solve programming problems, and develop practical projects.</text>
+
+---
+
+**Learning by building. Improving through practice. Growing one concept at a time.**
