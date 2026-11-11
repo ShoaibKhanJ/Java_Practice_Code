@@ -1,4 +1,4 @@
-# 🎬 YouTube Video Manager (Java OOP Demo)
+# 🎬 YouTube Video Manager
 
 A small console application that models YouTube-style videos in Java. It demonstrates core **object-oriented programming** concepts: encapsulation, inheritance, method overriding, constructor chaining and static members.
 
