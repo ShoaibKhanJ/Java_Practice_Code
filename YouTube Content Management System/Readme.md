@@ -1,108 +1,98 @@
-# YouTube Content Management System
+# 🎬 YouTube Video Manager (Java OOP Demo)
 
-A Java-based console application built to practice and demonstrate Object-Oriented Programming (OOP) concepts through a simplified YouTube video management system.
+A small console application that models YouTube-style videos in Java. It demonstrates core **object-oriented programming** concepts: encapsulation, inheritance, method overriding, constructor chaining and static members.
 
-This project is part of my Java learning journey as a BS Computer Science student.
-
-## About the Project
-
-The application models different types of YouTube videos, including regular videos and premium videos.
-
-It focuses on implementing Java OOP concepts through practical coding rather than simply studying theory.
-
-## Technologies Used
-
-- Java
-- VS Code / IntelliJ IDEA
-- Git & GitHub
-
-## Current Features
-
-- Create video objects.
-- Store video titles and view counts.
-- Store channel names, likes, and comments.
-- Create premium video objects.
-- Track the total number of videos using a static variable.
-- Display video details.
-- Use inheritance to organize video types.
-
-## OOP Concepts Implemented
-
-| Concept | Status |
-|---|---|
-| Classes and Objects | ✅ Completed |
-| Constructors | ✅ Completed |
-| `this` Keyword | ✅ Completed |
-| Access Modifiers | ✅ Basic implementation |
-| Static Variables and Methods | ✅ Completed |
-| Inheritance | ✅ Completed |
-| Multilevel Inheritance | ✅ Implemented |
-| `super` Keyword | ✅ Implemented |
-| Constructor Chaining | ✅ Implemented |
-| Method Overriding | 🚧 In progress |
-| Dynamic Method Dispatch | ⏳ Planned |
-
-## Project Structure
-
-```text
-YouTube-Content-Management-System/
-│
-├── Main.java
-└── README.md
-```
-
-### Class Hierarchy
-
-```text
-Video
-  |
-  └── YouTubeVideo
-          |
-          └── PremiumVideo
-```
-
-- **Video:** Base class containing common video information.
-- **YouTubeVideo:** Extends Video and adds channel information, likes, and comments.
-- **PremiumVideo:** Extends YouTubeVideo and adds premium-specific properties.
-
-## Learning Roadmap
-
-- [x] Classes and Objects
-- [x] Constructors
-- [x] Static and Instance Members
-- [x] Inheritance
-- [x] Multilevel Inheritance
-- [x] Constructor Chaining
-- [ ] Method Overriding
-- [ ] Dynamic Method Dispatch
-- [ ] Superclass References
-- [ ] Improve Encapsulation
-- [ ] Add More Functionality
-
-## Future Improvements
-
-- Improve code organization.
-- Implement better encapsulation.
-- Add more video-related functionality.
-- Improve the console interface.
-- Explore additional OOP concepts.
-- Expand the project as my Java knowledge grows.
-
-## Project Status
-
-<ins>Actively Developing</ins>
-
-This project is continuously updated as I learn new Java concepts and improve my programming skills.
-
-## Author
-
-**Shoaib Khan Jamali**
-
-BS Computer Science Student | Java Learner | Aspiring Software Engineer
-
-- GitHub: [ShoaibKhanJ](https://github.com/ShoaibKhanJ)
-- LinkedIn: [Connect with me](https://www.linkedin.com/)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![OOP](https://img.shields.io/badge/Concept-OOP-2c5364?style=for-the-badge)
+![Console App](https://img.shields.io/badge/Type-Console_App-203a43?style=for-the-badge)
 
 ---
 
-*Built with Java. Improved with every commit.*
+## 📖 Overview
+
+The program defines a three-level class hierarchy and creates several sample videos, printing the details of each one and the total number of videos created.
+
+```
+Video                  (base class)
+ └── YouTubeVideo      (adds channel, likes, comments)
+      └── PremiumVideo (adds premium features, subscription flag)
+```
+
+## ✨ Features
+
+- **Encapsulation:** `title` and `views` are `private` in `Video`.
+- **Inheritance:** `YouTubeVideo` extends `Video`, and `PremiumVideo` extends `YouTubeVideo`.
+- **Constructor chaining:** each subclass calls `super(...)` to initialise inherited fields.
+- **Method overriding:** `PremiumVideo` overrides `displayDetails()` with its own output.
+- **Static members:** `total_videos` counts every object created, and `displayTotalVideos()` prints the count.
+
+## 🧱 Class Reference
+
+| Class | Extends | Key fields | Key methods |
+|---|---|---|---|
+| `Video` | n/a | `title`, `views`, static `total_videos` | `video_details()`, static `displayTotalVideos()` |
+| `YouTubeVideo` | `Video` | `Channelname`, `video_likes`, `video_comments` | `displayDetails()` |
+| `PremiumVideo` | `YouTubeVideo` | `premiumFeatures`, `subscriptionRequired` | `displayDetails()` (overridden) |
+| `main` | n/a | n/a | `main(String[] args)` entry point |
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Java JDK 8 or higher](https://www.oracle.com/java/technologies/downloads/)
+
+### Run it
+
+```bash
+# 1. Save the code as Main.java, then compile
+javac Main.java
+
+# 2. Run
+java main
+```
+
+> The entry-point class is named `main` (lowercase), so the run command uses `java main`.
+
+## 🖥️ Sample Output
+
+```
+_______________________________________________
+Title: How Java Actually Works
+Views: 250000
+Likes: 12500
+Comments: 450
+_______________________________________________
+...
+_______________________________________________
+Title: Python for AI Beginners
+Views: 430000
+Premium Feature: 4K Quality
+Subscription Required: true
+_______________________________________________
+...
+Total Videos: 7
+```
+
+## 📂 Project Structure
+
+```
+.
+├── Main.java    # Video, YouTubeVideo, PremiumVideo and main classes
+└── README.md
+```
+
+## 🔧 Possible Improvements
+
+- Have `PremiumVideo.displayDetails()` call `super.displayDetails()` so likes and comments are shown for premium videos too.
+- Rename `main` to `Main` and `video_details()` to `videoDetails()` to follow Java naming conventions.
+- Store videos in an `ArrayList<Video>` and loop over them instead of calling each `displayDetails()` by hand.
+- Add getters and setters for the private fields.
+- Move each class into its own file.
+
+## 👤 Author
+
+**Shoaib Khan**: [LinkedIn](https://www.linkedin.com/in/shoaibkj) • [Webica Studio](http://www.webicastudio.com)
+
+---
+
+⭐ If this helped you learn OOP in Java, consider giving the repo a star!
