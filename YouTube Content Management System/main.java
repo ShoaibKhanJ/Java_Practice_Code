@@ -47,7 +47,7 @@
             this.subscriptionRequired = subscriptionRequired;
         }
 
-        @Override
+        @Override // declearing overriding intenstionally
         void displayDetails() {
         super.video_details(); // Calls inherited method
         System.out.println("Premium Feature: "+ this.premiumFeatures);
